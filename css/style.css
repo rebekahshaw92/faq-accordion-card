@@ -1,0 +1,26 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .attribution a {
+    color: #3e52a3; }
+
+body {
+  background: linear-gradient(#af67e9, #6565e7) no-repeat; }
+
+.card {
+  border-radius: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  float: none;
+  margin-bottom: 10px;
+  height: 600px;
+  background-image: no-repeat url("images/bg-pattern-desktop.svg"); }
+
+.myImage {
+  height: 100%;
+  background-image: no-repeat url("images/bg-pattern-desktop.svg"); }
+
+/*# sourceMappingURL=style.css.map */

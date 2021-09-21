@@ -1,0 +1,32 @@
+$softViolet: hsl(273, 75%, 66%);
+$softBlue: hsl(240, 73%, 65%);
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+body {
+
+background:linear-gradient($softViolet, $softBlue) no-repeat; 
+}
+
+.card {
+    border-radius: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    float: none; 
+    margin-bottom: 10px; 
+    height: 600px;
+    background-image: no-repeat url("images/bg-pattern-desktop.svg");
+}
+
+.hero {
+    height: 100%;
+    background-image: no-repeat url("images/bg-pattern-desktop.svg");
+}
