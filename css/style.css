@@ -2,25 +2,173 @@
   font-size: 11px;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 20px; }
-  .attribution a {
-    color: #3e52a3; }
+  padding-bottom: 20px;
+}
+.attribution a {
+  color: #3e52a3;
+}
 
 body {
-  background: linear-gradient(#af67e9, #6565e7) no-repeat; }
+  background: linear-gradient(#af67e9, #6565e7) no-repeat;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100%;
+}
 
 .card {
-  border-radius: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  float: none;
-  margin-bottom: 10px;
-  height: 600px;
-  background-image: no-repeat url("images/bg-pattern-desktop.svg"); }
+  display: flex;
+  box-shadow: 0px 10px 7px 1px rgba(29, 30, 53, 0.5);
+}
+@media (max-width: 1440px) {
+  .card {
+    border-radius: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    height: 500px;
+  }
+}
+@media (max-width: 375px) {
+  .card {
+    background: url("../images/bg-pattern-mobile.svg") no-repeat white;
+    background-position: top center;
+    width: 300px !important;
+    top: 40px;
+  }
+}
 
-.myImage {
+.hero {
+  justify-content: flex-end;
   height: 100%;
-  background-image: no-repeat url("images/bg-pattern-desktop.svg"); }
+  overflow: hidden;
+}
+@media (max-width: 1440px) {
+  .hero img {
+    background: url("../images/bg-pattern-desktop.svg") no-repeat center/cover white;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: -5.5rem;
+    right: 4.5rem;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 375px) {
+  .hero img {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .heroMobile {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .heroMobile {
+    display: block;
+    margin-top: -13em;
+  }
+}
+
+.faq {
+  padding-bottom: 20px;
+}
+@media (max-width: 375px) {
+  .faq {
+    text-align: center;
+  }
+}
+
+.square {
+  position: absolute;
+}
+@media (max-width: 1440px) {
+  .square {
+    width: 15em;
+    height: 15em;
+    background: none;
+    background-image: url("./images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0rem;
+    top: 14rem;
+    transform: translateX(-55%);
+    z-index: 1;
+  }
+}
+@media (max-width: 375px) {
+  .square {
+    display: none;
+  }
+}
+
+.imageCollapse, .imageCollapse2, .imageCollapse3, .imageCollapse4, .imageCollapse5 {
+  display: inline-block;
+}
+
+.imageCollapse:hover, .imageCollapse2:hover, .imageCollapse3:hover, .imageCollapse4:hover, .imageCollapse5:hover {
+  cursor: pointer;
+}
+
+.questions {
+  width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 375px) {
+  .questions {
+    width: 100%;
+    padding-top: 80px;
+    margin: auto;
+  }
+}
+.questions h1 {
+  font-weight: 700;
+}
+
+.mainQuestion, .mainQuestion2, .mainQuestion3, .mainQuestion4, .mainQuestion5 {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 375px) {
+  .mainQuestion, .mainQuestion2, .mainQuestion3, .mainQuestion4, .mainQuestion5 {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+  }
+}
+.mainQuestion img, .mainQuestion2 img, .mainQuestion3 img, .mainQuestion4 img, .mainQuestion5 img {
+  height: auto;
+}
+.mainQuestion h2, .mainQuestion2 h2, .mainQuestion3 h2, .mainQuestion4 h2, .mainQuestion5 h2 {
+  font-size: 12px;
+}
+
+.flip {
+  transform: rotate(-180deg);
+}
+
+.mainText h2 {
+  font-weight: 700;
+}
+
+.firstQuestion:hover, .secondQuestion:hover, .thridQuestion:hover, .fourthQuestion:hover, .fifthQuestion:hover {
+  color: #f47c57;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .card-body1, .card-body2, .card-body3, .card-body4, .card-body5 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

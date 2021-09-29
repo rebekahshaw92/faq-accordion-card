@@ -11,45 +11,106 @@
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="js/script.js"></script>
+
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 <body>
-  <div class="card justify-content-lg-center" style="width: 80rem;">
+  <main class="card justify-content-lg-center" style="width: 60rem;">
   <div class="row">
-    <div class="col-lg-6 col-3">
+    <div class="col-lg-7 col-sm-3">
       <div class ="hero">
-  <image  src="images/illustration-woman-online-desktop.svg" alt="image"></image>
+      <image src="images/illustration-woman-online-desktop.svg" alt="image"></image>
+    </div>
+    <div class ="heroMobile">
+      <image src="images/illustration-woman-online-mobile.svg" alt="image"></image>
+    </div>
+    <div class="square">
+      <image src="images/illustration-box-desktop.svg" alt="image"></image>
     </div>
     </div>
+    <div class="col-lg-4">
+      <div class="questions">
+  <h1 class="faq">FAQ</h1>
 
-    <div class="col-lg-4 col-3">
-  <h1>FAQ</h1>
+   <div class="mainQuestion border-bottom">
+  <h2 class="firstQuestion" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">How many team members can I invite?</h2>
+  
+  <img id="imageCollapse"  class="img-thumbnail" src="images/icon-arrow-down.svg" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample2">
+   </div>
+   
+    <div class="collapse" id="collapseExample">
+      <div class="card-body1">
+        <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.</p>
 
-  <p>How many team members can I invite?</p>
-  <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.</p>
+  </div>
+  </div>
 
-  <p>What is the maximum file upload size?</p>
-  <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+   <div class="mainQuestion2 border-bottom">
+    <h2 class="secondQuestion" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">What is the maximum file upload size?</h2>
+    
+    <img id="imageCollapse2"  class="img-thumbnail" src="images/icon-arrow-down.svg" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" alt="arrow">
+     </div>
+     
+      <div class="collapse" id="collapseExample2">
+        <div class="card-body2">
+    <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+  
+    </div>
+    </div> 
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+  <div class="mainQuestion3 border-bottom">
+    <h2 class="thridQuestion" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">How do I reset my password?</h2>
+    
+    <img id="imageCollapse3"  class="img-thumbnail" src="images/icon-arrow-down.svg" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample2" alt="arrow">
+     </div>
+     
+      <div class="collapse" id="collapseExample3">
+        <div class="card-body3">
+          <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</p>
+  
+    </div>
+    </div>
+ 
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+  <div class="mainQuestion4 border-bottom">
+    <h2 class="fourthQuestion" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">Can I cancel my subscription?</h2>
+  <img id="imageCollapse4"  class="img-thumbnail" src="images/icon-arrow-down.svg" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4" alt="arrow" />
+  </div>
+  <div class="collapse" id="collapseExample4">
+    <div class="card-body4">
+  <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+    </div>
+  </div>
+
+  <div class="mainQuestion5 border-bottom">
+    <h2 class="fifthQuestion" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">Do you provide additional support?</h2>
+  <img id="imageCollapse5"  class="img-thumbnail" src="images/icon-arrow-down.svg" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" alt="arrow">
+  </div>
+  <div class="collapse" id="collapseExample5">
+    <div class="card-body5">
+  <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
 </div>
   </div>
   </div>
+  </div>
+  </div>
+</main>
+  
+ 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://rebekahshaw.com" target="_blank">Rebekah Shaw</a>.
   
 </body>
 
